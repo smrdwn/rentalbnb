@@ -6,9 +6,9 @@ export type SafeListing = Omit<Listing, "createdAt"> & {
 
 export type SafeReservation = Omit<
   Reservation,
-  "createdAt" | "startDate" | "endDate" | "listing"
+  "createdPrice" | "startDate" | "endDate" | "listing"
 > & {
-  createdAt: string;
+  createdPrice: string;
   startDate: string;
   endDate: string;
   listing: SafeListing;

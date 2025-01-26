@@ -16,6 +16,7 @@ const Calender: React.FC<CalenderProps> = ({
     onChange,
     disabledDates
 }) => {
+
   return (
     <DateRange 
         rangeColors={['#262626']}
